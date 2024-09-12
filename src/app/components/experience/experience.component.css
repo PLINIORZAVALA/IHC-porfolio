@@ -1,0 +1,88 @@
+/* Sección Global */
+.section {
+  padding: 80px 0;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.section-title {
+  font-size: 3rem; /* Título grande */
+  font-weight: 700;
+  color: #333;
+  text-align: center;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.section-title::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 4px;
+  background-color: #64ffda;
+  margin: 20px auto 0 auto;
+  border-radius: 2px;
+}
+
+/* Experiencia */
+.experience-content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.job {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.job-title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.job-date {
+  font-size: 1.2rem;
+  color: #888;
+  margin-bottom: 20px;
+}
+
+.job-responsibilities {
+  list-style-type: disc;
+  padding-left: 20px;
+  font-size: 1.5rem;
+  line-height: 1.8;
+}
+
+.job-responsibilities li {
+  margin-bottom: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2.5rem;
+  }
+
+  .job {
+    padding: 30px;
+  }
+
+  .job-title {
+    font-size: 1.8rem;
+  }
+
+  .job-responsibilities {
+    font-size: 1.3rem;
+  }
+}

@@ -1,0 +1,83 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+/* Header Styles */
+.header-classic {
+  width: 100%;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  padding: 20px 0; /* Aumentamos el padding para ocupar más espacio */
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 40px; /* Ajuste del padding */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar {
+  display: flex;
+  gap: 50px; /* Aumentamos el espacio entre los enlaces */
+}
+
+.nav-link {
+  color: #333;
+  text-decoration: none;
+  font-size: 2rem; /* Duplicamos el tamaño de la fuente */
+  font-weight: 600; /* Aumentamos el grosor de la fuente */
+  transition: color 0.3s ease;
+  position: relative;
+}
+
+.nav-link::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 4px; /* Hacemos la línea subrayada más gruesa */
+  background: #64ffda;
+  transition: width 0.3s;
+  position: absolute;
+  bottom: -8px; /* Espacio mayor entre el texto y la línea */
+  left: 0;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.nav-link:hover {
+  color: #64ffda;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 30px; /* Más espacio entre los enlaces en pantallas pequeñas */
+  }
+
+  .container {
+    padding: 20px;
+  }
+
+  .nav-link {
+    font-size: 1.5rem; /* Ajustamos el tamaño en pantallas más pequeñas */
+  }
+}

@@ -1,0 +1,91 @@
+/* Sección Global */
+.section {
+  padding: 80px 0;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.section-title {
+  font-size: 3rem; /* Título grande */
+  font-weight: 700;
+  color: #333;
+  text-align: center;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.section-title::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 4px;
+  background-color: #64ffda;
+  margin: 20px auto 0 auto;
+  border-radius: 2px;
+}
+
+/* Contenido de Contacto */
+.contact-content {
+  text-align: center;
+}
+
+.contact-description {
+  font-size: 1.5rem;
+  line-height: 1.8;
+  color: #555;
+  max-width: 800px;
+  margin: 0 auto 40px auto;
+}
+
+.contact-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Espacio entre íconos */
+}
+
+.contact-item {
+  font-size: 2rem;
+}
+
+.contact-link {
+  display: flex;
+  align-items: center;
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-link i {
+  color: #64ffda; /* Color del ícono */
+}
+
+.contact-link:hover {
+  color: #333; /* Cambio de color al pasar el cursor */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2.5rem;
+  }
+
+  .contact-description {
+    font-size: 1.3rem;
+  }
+
+  .contact-list {
+    gap: 15px; /* Menor espacio en pantallas pequeñas */
+  }
+
+  .contact-item {
+    font-size: 1.5rem;
+  }
+}
